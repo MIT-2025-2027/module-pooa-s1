@@ -13,19 +13,18 @@ public class Main {
 		c1.up();
 		c1.up();
 		
-		//System.out.println("Le Compteur a la valeur : " + c1.getValue());
-		
+		//system.out.println("Le Compteur a la valeur : " + c1.getValue());
 		System.out.println(c1.toString());
 		
 		c1.up();
 		
 		//System.out.println("Le Compteur a la valeur : " + c1.getValue());
-		System.out.println(c1.toString());
+		System.out.println(c1);
 		
 		c1.raz();
 
 		//System.out.println("Le Compteur a la valeur : " + c1.getValue());
-		System.out.println(c1.toString());
+		System.out.println(c1);
 	}
 
 }

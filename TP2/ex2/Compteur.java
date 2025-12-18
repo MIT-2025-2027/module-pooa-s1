@@ -2,7 +2,7 @@ package tp2.ex2;
 
 public class Compteur {
 	
-	private Integer value;
+	private int value;
 	
 	public Compteur()
 	{
@@ -26,6 +26,6 @@ public class Compteur {
 	
 	public String toString()
 	{
-		return "" + this.value.toString();
+		return "La valeur du compteur est : " + this.value;
 	}
 }

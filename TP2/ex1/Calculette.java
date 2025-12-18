@@ -79,7 +79,7 @@ public class Calculette {
 	
 	public double getValue()
 	{
-		return 564 / 2;
+		return 0.0;
 	}
 	
 	public void dot()

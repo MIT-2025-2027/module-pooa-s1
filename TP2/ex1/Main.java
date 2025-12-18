@@ -8,6 +8,7 @@ public class Main {
 		/**
 		 * Voiture
 		 */
+		
 		Voiture voiture = new Voiture();
 		
 		// étape 1
@@ -29,11 +30,13 @@ public class Main {
 		// étape 5
 		voiture.mettreCarburant(52.5);
 		
-		
 		/**
 		 * Calculette
 		 *
 		 */
+		
+		/*
+	
 		Calculette calculette = new Calculette();
 		
 		calculette.cinq();
@@ -45,8 +48,9 @@ public class Main {
 		
 		System.out.println(calculette.getValue());
 		
-		calculette.raz();
+		calculette.raz();	
 		
+		*/
 	}
 
 }

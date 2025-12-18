@@ -2,7 +2,6 @@ package tp2.ex1;
 
 public class Voiture {
 
-
 	public void demarrer()
 	{
 		System.out.println("Démarrage...");
@@ -11,8 +10,7 @@ public class Voiture {
 	public void mettreCarburant(double volume)
 	{
 		System.out.println("Carburant de volume " + volume + " est rempli");
-	}
-	
+	} 
 	
 	public void choisirRapport(int rapport)
 	{

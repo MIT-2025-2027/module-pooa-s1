@@ -23,7 +23,7 @@ public class Complexe {
 	}
 	
 	public void setA(double a)
-	{
+	{		
 		this.pReal = a;
 	}
 	
@@ -39,23 +39,24 @@ public class Complexe {
 	
 	public Complexe add(Complexe complexe)
 	{
-		return new Complexe(this.pReal + complexe.pReal, this.pImg + complexe.pImg);
+		return new Complexe(
+				this.pReal + complexe.pReal, 
+				this.pImg + complexe.pImg
+		);
 	}
 	
 	public Complexe mul(Complexe c)
 	{
 		/**
-		 * Z1 = a x ib, Z2 = c x id
-		 * 
-		 * a x c        a x id
-		 * ib x c       ib x id = b x d x i^2 = -bd
-		 * 
-		 * 
-		 * Z1 * Z2 = (ac - bd) + i(ad + bc)
+		 * Z1 = a + ib, Z2 = c + id
 		 * 
 		 * real = a*c - b*d;
 		 * imag = a*d + b*c;
 		 * 
+		 * (a + ib) x (c + id)
+		 * ac + aid + ibc + i^2bd
+		 * ac + aid + ibc + (-1)bd
+		 * ac + aid + ibc - bd
 		 */
 		double real = this.pReal * c.pReal - this.pImg * c.pImg;
 		double imaginaire = this.pReal * c.pImg + this.pImg * c.pReal;
